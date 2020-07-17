@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">DDXR</string>
+    <string name="home">Home</string>
+    <string name="blogs">Blogs</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="CAMERA">Camera</string>
+    <string name="GALLERY">Gallery</string>
+    <string name="discussions">Discussions</string>
+    <string name="events">Events</string>
+    <string-array name="newsfeed_array">
+        <item>All Events</item>
+        <item>Liked Events</item>
+        <item>Subscribed Clubs</item>
+
+    </string-array>
+
+    <string-array name="blogs_array">
+        <item>All </item>
+        <item>Added by me</item>
+
+        <item>Liked </item>
+        <item>Disliked</item>
+        <item>Not reacted</item>
+
+
+    </string-array>
+
+    <string name="tnc"><u>Terms of Service</u></string>
+
+    <string name="privacy"><u>Privacy Policy</u></string>
+
+    <string name="label_select_picture">Select Picture</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_ok">OK</string>
+
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage permission is needed to pick images.</string>
+
+
+    <string name="toast_cannot_retrieve_selected_image">Cannot retrieve selected image</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+
+
+
+
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://hungryhunter96.github.io\",\n  }\n}]</string>
+</resources>

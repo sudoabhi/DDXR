@@ -1,0 +1,266 @@
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ProgressBar
+        android:elevation="12dp"
+        android:padding="5dp"
+        android:id="@+id/progress_bar2"
+
+
+
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        style="?android:attr/progressBarStyle"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.example.androdev.ddxr.PaytmPAYMENT.InviteTeam">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/mainColor">
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:text="Event Name"
+                            android:textColor="#ff0000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/EventName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:text="Ticket Name"
+                            android:textColor="#ff0000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/TicketName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:text=": Attendee"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:autoLink="web"
+                            android:text="Event URL"
+                            android:textColor="#ff0000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/EventURL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:autoLink="web"
+                            android:text=": www.eventurl.com"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:text="Invited By"
+                            android:textColor="#ff0000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/InvitedBy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:text=": Ashutosh Mishra"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:text="Fee to pay"
+                            android:textColor="#ff0000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/FeetobePaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/azo"
+                            android:text=": 00"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/chat_sdk_login_button_selector"
+                    android:fontFamily="@font/azo"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:text="REGISTER"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_barX"
+                    style="?android:attr/progressBarStyle"
+
+
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginEnd="75dp"
+                    android:elevation="12dp"
+                    android:layout_marginTop="20dp"
+                    android:indeterminateTint="@android:color/white"
+                    android:paddingRight="0dp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+            <!-- <Button
+                android:layout_width="match_parent"
+                android:text="REGISTER"
+                android:id="@+id/register_button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/chat_sdk_login_anonymously_button_selector"
+                android:layout_height="wrap_content" />
+-->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
+

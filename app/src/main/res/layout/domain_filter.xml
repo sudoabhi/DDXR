@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="40dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="8dp"
+    android:layout_marginRight="40dp"
+    android:layout_height="500dp">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+
+
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="match_parent"
+            android:text="None"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:text="Entrepeurship"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+
+        <TextView
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:text="Management"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+        <TextView
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:text="Sports"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+        <TextView
+            android:id="@+id/four"
+            android:layout_width="match_parent"
+            android:text="Hackathon"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+        <TextView
+            android:id="@+id/five"
+            android:layout_width="match_parent"
+            android:text="Cultural"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+        <TextView
+            android:id="@+id/six"
+            android:layout_width="match_parent"
+            android:text="Literary"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+        <TextView
+            android:id="@+id/seven"
+            android:layout_width="match_parent"
+            android:text="Technical"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

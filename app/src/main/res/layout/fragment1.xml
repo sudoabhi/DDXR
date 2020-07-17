@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+   <TextView
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:id="@+id/ddxr"
+       android:textStyle="bold"
+       android:textSize="28sp"
+       android:textColor="#000"
+       android:text="ddxr"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="25dp"
+       android:fontFamily="@font/azo"/>
+
+   <de.hdodenhof.circleimageview.CircleImageView
+
+       android:id="@+id/profile_image"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_marginTop="80dp"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/addphoto"
+       app:civ_border_color="#000000"
+       app:civ_border_width="2dp"
+       android:layout_below="@+id/ddxr"/>
+
+   <ProgressBar
+      android:id="@+id/top_progress_bar"
+       android:layout_marginTop="60dp"
+       android:layout_alignTop="@id/profile_image"
+       style="?android:attr/progressBarStyleLarge"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:visibility="invisible"/>
+
+
+
+   <TextView
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:id="@+id/textView2"
+       android:textStyle="bold"
+       android:textSize="18sp"
+       android:textColor="#000"
+       android:text="Add Your Profile Picture *"
+       android:layout_marginTop="37dp"
+       android:fontFamily="@font/azothin"
+       android:layout_below="@+id/ddxr"
+       android:layout_marginStart="10dp"/>
+
+   <Button
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:id="@+id/next_viewpager"
+       android:textSize="20sp"
+       android:text="NEXT"
+       android:background="@drawable/round"
+       android:backgroundTint="@color/secondGrey"
+       android:foreground="?selectableItemBackground"
+       android:layout_marginBottom="104dp"
+       android:layout_marginEnd="30dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentEnd="true"/>
+
+   <ProgressBar
+       android:id="@+id/progressBar"
+       style="?android:attr/progressBarStyleHorizontal"
+       android:layout_width="match_parent"
+       android:indeterminate="true"
+       android:indeterminateTint="#000"
+       android:layout_height="wrap_content" />
+
+
+
+   </RelativeLayout>
+</FrameLayout>
+

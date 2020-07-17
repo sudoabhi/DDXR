@@ -1,0 +1,214 @@
+
+   <FrameLayout
+
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+
+
+       <ProgressBar
+           android:elevation="12dp"
+           android:padding="5dp"
+           android:id="@+id/progress_bar2"
+
+
+
+           android:visibility="gone"
+           android:layout_gravity="center"
+           android:layout_width="90dp"
+           android:layout_height="90dp"
+           style="?android:attr/progressBarStyle"/>
+
+
+
+
+       <ScrollView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           xmlns:tools="http://schemas.android.com/tools"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+
+
+
+
+           tools:context="com.example.androdev.ddxr.PaytmPAYMENT.ChooseTeam">
+
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/parent_view"
+               android:orientation="vertical"
+
+               >
+
+
+
+
+               <android.support.v7.widget.Toolbar
+                   android:layout_width="match_parent"
+                   android:background="@color/mainColor"
+                   android:id="@+id/toolbar"
+                   app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+                   android:layout_height="?attr/actionBarSize"/>
+
+
+
+
+
+
+               <android.support.v7.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_margin="10dp"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:orientation="vertical"
+                       android:layout_margin="10dp"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:fontFamily="@font/azo"
+                           android:layout_margin="5dp"
+                           android:textSize="19sp"
+                           android:textColor="#000"
+                           android:text="For new team registration:-"
+                           android:layout_height="wrap_content" />
+
+                       <EditText
+                           android:layout_width="wrap_content"
+                           android:fontFamily="@font/azo"
+                           android:layout_margin="5dp"
+                           android:textSize="17sp"
+                           android:ems="10"
+                           android:maxLength="17"
+                           android:id="@+id/et_teamname"
+                           android:hint="Team Name"
+                           android:layout_gravity="center_horizontal"
+                           android:layout_height="wrap_content" />
+
+                       <Button
+                           android:layout_width="wrap_content"
+                           android:layout_margin="5dp"
+                           android:padding="10dp"
+                           android:text="REGISTER"
+                           android:id="@+id/register"
+                           android:layout_gravity="center_horizontal"
+                           android:layout_height="wrap_content" />
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:orientation="horizontal"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:fontFamily="@font/azo"
+                               android:layout_margin="5dp"
+                               android:textSize="19sp"
+                               android:textColor="@color/red"
+                               android:text="Note:-"
+                               android:layout_height="wrap_content" />
+
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:fontFamily="@font/azo"
+                               android:textSize="17sp"
+                               android:layout_margin="5dp"
+                               android:text="Only for new teams. After registration a link will be shared to you which when shared to other teammates will allow them to join you for the event. See below in case one of your team members already registered for the event."
+                               android:layout_height="wrap_content" />
+
+
+                       </LinearLayout>
+
+
+
+
+                   </LinearLayout>
+
+
+
+
+
+
+
+               </android.support.v7.widget.CardView>
+
+               <android.support.v7.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_margin="10dp"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:orientation="vertical"
+                       android:layout_margin="10dp"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:fontFamily="@font/azo"
+                           android:textSize="19sp"
+                           android:layout_margin="5dp"
+                           android:textColor="#000"
+                           android:text="For already registered teams-"
+                           android:layout_height="wrap_content" />
+
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:orientation="horizontal"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:fontFamily="@font/azo"
+                               android:layout_margin="5dp"
+                               android:textSize="17sp"
+                               android:textColor="@color/red"
+                               android:text="Note:-"
+                               android:layout_height="wrap_content" />
+
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:fontFamily="@font/azo"
+                               android:textSize="17sp"
+                               android:layout_margin="5dp"
+                               android:text="If one of your team members have already registered for the event, ask him for the url link shared to him which will be available on his profile under 'Your Tickets'. Register from that link only. Do not register from this page if one of your teammate have already registered for the event."
+                               android:layout_height="wrap_content" />
+
+
+                       </LinearLayout>
+
+
+
+
+                   </LinearLayout>
+
+
+
+
+
+
+
+               </android.support.v7.widget.CardView>
+
+           </LinearLayout>
+
+       </ScrollView>
+
+
+
+   </FrameLayout>
+

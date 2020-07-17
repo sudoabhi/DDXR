@@ -1,0 +1,73 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.androdev.ddxr.UserFragments.FragmentSearch">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.androdev.ddxr.UserFragments.FragmentSearch">
+
+
+
+
+
+    <LinearLayout
+            android:id="@+id/ll_searchWithBack"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@null"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editText_search"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_gravity="center"
+                android:paddingStart="25dp"
+                android:background="@color/mainColor"
+                android:textColorHint="#fff"
+                android:drawableEnd="@drawable/ic_search_black_24dp"
+                android:drawableTint="#FFF"
+                android:paddingEnd="15dp"
+                android:cursorVisible="false"
+                android:imeOptions="actionSearch"
+                android:privateImeOptions="Search"
+                android:fontFamily="@font/azo"
+                android:hint="Search" />
+
+        </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        app:tabIndicatorHeight="2dp"
+        android:layout_below="@id/ll_searchWithBack"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        >
+
+
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/view_recycler_view"
+    android:layout_below="@id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60A3A3A3">
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_noresults"
+        android:text="No Posts Found !"
+        android:textSize="21sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="200dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/azo"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="68dp"
+        android:elevation="10dp"
+        android:id="@+id/my_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+
+</FrameLayout>

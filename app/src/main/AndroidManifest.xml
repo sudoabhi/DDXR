@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androdev.ddxr">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!--
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    -->
+    <application
+        android:name=".UserFragments.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
+        <service
+            android:name=".Notification.MyFirebaseIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".UserFragments.MainUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hungryhunter96.github.io"
+                    android:pathPrefix="/postlink"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ChatBox.FirstActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".UserProfilePackage.PeopleClick"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hungryhunter96.github.io"
+                    android:pathPrefix="/profile"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatBox.HomeMessage"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".UserFragments.BlogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hungryhunter96.github.io"
+                    android:pathPrefix="/post"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserFragments.ParticipantsList"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".UserFragments.LikeCommentParticipant"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".UserFragments.AddPost"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".EventDetails.EventDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hungryhunter96.github.io"
+                    android:pathPattern="/share_event"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserFragments.InterestedPeople"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".UserFragments.ProfileViewers"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".PaytmPAYMENT.TicketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".PaytmPAYMENT.TicketHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+
+        <activity
+            android:name=".PaytmPAYMENT.ChooseTeam"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity android:name=".PaytmPAYMENT.AddOtherMembers" />
+        <activity
+            android:name=".PaytmPAYMENT.InviteTeam"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hungryhunter96.github.io"
+                    android:pathPrefix="/inviteteam"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserFragments.EventDiscussions"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+
+        <activity
+            android:name=".IntroPackage.ScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".IntroPackage.MailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus"
+             />
+        <activity
+            android:name=".IntroPackage.RegsiterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus"
+             />
+        <activity
+            android:name=".IntroPackage.PasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus"
+             />
+        <activity
+            android:name=".SignupPackage.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".EventDetails.EventDetailsOrganisersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".EventDetails.EventDetailsFAQsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".EventDetails.EventDetailsPostersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".EventDetails.EventDetailsTicketsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".CommonPackage.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".CommonPackage.AppFAQsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".CommonPackage.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".CommonPackage.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+        <activity
+            android:name=".CommonPackage.PrivacyTermsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+
+        <activity android:name=".Notification.ManualNotification"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" >
+            <intent-filter>
+                <action android:name="com.example.androdev.ddxr.MyManualNotification"> </action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+
+
+            </intent-filter>
+
+
+        </activity>
+
+        <activity
+            android:name=".ClubDetailsPackage.ClubDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+
+        <activity
+            android:name=".ClubDetailsPackage.ClubEventsList"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+
+        <activity
+            android:name=".ClubDetailsPackage.ClubEventDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+
+        <activity
+            android:name=".ClubDetailsPackage.ClubPostsList"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+
+        <activity android:name=".SignupPackage.SignUpActivity1"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus"/>
+        <activity android:name=".SignupPackage.SignUpActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus"/>
+        <activity android:name=".SignupPackage.SignUpActivity4"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus"/>
+        <activity android:name=".SignupPackage.SignUpActivity3"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus"/>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus" />
+
+        <activity android:name=".SignupPackage.PhotoSelector"
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoredStatus"/>
+
+    </application>
+
+</manifest>

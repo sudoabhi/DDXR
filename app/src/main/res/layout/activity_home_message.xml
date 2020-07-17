@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.androdev.ddxr.ChatBox.HomeMessage">
+
+      <android.support.v7.widget.Toolbar
+
+
+        android:id="@+id/toolbar"
+
+        app:popupTheme="@style/PopupOverlay"
+          app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+          android:background="#563C5C"
+          app:titleTextColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:elevation="12dp"
+            android:padding="5dp"
+            android:id="@+id/progress_bar"
+            android:layout_marginTop="20dp"
+
+
+            android:visibility="visible"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            style="?android:attr/progressBarStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="No messages to show!"
+            android:fontFamily="@font/azo"
+            android:textSize="19sp"
+            android:visibility="invisible"
+            android:id="@+id/no_messages"
+
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
